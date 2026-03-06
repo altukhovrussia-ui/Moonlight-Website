@@ -405,9 +405,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           id="main-heading"
-          className={`font-bold leading-[0.9] mb-8 tracking-tighter mx-auto whitespace-nowrap sm:whitespace-normal ${language === 'ru'
-            ? 'text-[28px] min-[375px]:text-4xl sm:text-5xl md:text-[90px] max-w-5xl px-4'
-            : 'text-[32px] min-[390px]:text-4xl sm:text-6xl md:text-[110px] max-w-4xl'
+          className={`font-bold leading-[0.9] mb-8 tracking-tighter mx-auto w-full px-4 ${language === 'ru'
+            ? 'text-[8.5vw] sm:text-5xl md:text-[90px] max-w-5xl'
+            : 'text-[9.5vw] sm:text-6xl md:text-[110px] max-w-4xl'
             }`}
         >
           {t.hero.titleLine1}<br />
@@ -1002,19 +1002,19 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div className="flex flex-col pt-2">
-            <div className="mb-6 flex flex-row items-center bg-white/5 p-3 sm:p-4 rounded border border-white/10 gap-3 sm:gap-4 w-fit max-w-full overflow-hidden">
-              <div className="flex items-center gap-2 sm:gap-3 border-r border-white/10 pr-3 sm:pr-4">
+            <div className="mb-6 flex flex-row items-center bg-white/5 p-2 min-[390px]:p-3 sm:p-4 rounded border border-white/10 gap-2 min-[390px]:gap-3 sm:gap-4 w-fit max-w-full overflow-hidden">
+              <div className="flex items-center gap-1.5 min-[390px]:gap-2 sm:gap-3 border-r border-white/10 pr-2 min-[390px]:pr-3 sm:pr-4">
                 <Users className="w-3 h-3 sm:w-4 sm:h-4 text-primary shrink-0" aria-hidden="true" />
-                <span className="font-black text-[10px] sm:text-xs tracking-widest uppercase whitespace-nowrap">{t.contact.projectsCompleted}</span>
+                <span className="font-black text-[2.5vw] min-[390px]:text-[10px] sm:text-xs tracking-[0.1em] sm:tracking-widest uppercase whitespace-nowrap overflow-hidden text-ellipsis">{t.contact.projectsCompleted}</span>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
-                  <img src="https://www.google.com/favicon.ico" alt="Google" className="w-3 h-3" />
+              <div className="flex items-center gap-1.5 min-[390px]:gap-2 sm:gap-3">
+                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-white rounded-full flex items-center justify-center shrink-0">
+                  <img src="https://www.google.com/favicon.ico" alt="Google" className="w-2 h-2 sm:w-3 sm:h-3" />
                 </div>
                 <div className="flex text-yellow-500">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-3 h-3 fill-current" />)}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-2.5 h-2.5 sm:w-3 sm:h-3 fill-current shrink-0" />)}
                 </div>
-                <span className="text-xs font-bold">5.0</span>
+                <span className="text-[10px] sm:text-xs font-bold shrink-0">5.0</span>
               </div>
             </div>
 
