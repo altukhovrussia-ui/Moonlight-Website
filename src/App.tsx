@@ -578,7 +578,7 @@ const Logos = () => {
 
         {/* Marquee Container */}
         <div className="w-full relative overflow-hidden flex whitespace-nowrap mask-edges">
-          <div className="flex gap-12 w-max flex-nowrap" style={{ animation: 'marquee 30s linear infinite' }}>
+          <div className="flex animate-marquee gap-12 w-max flex-nowrap">
             {/* First Set */}
             {logosList.map((logo, i) => (
               <div key={i} className="flex items-center gap-2 md:gap-3 group/logo shrink-0 pl-12">
